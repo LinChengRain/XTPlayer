@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'XTPlayer_Example' do
+  pod 'XTPlayer', :path => '../'
+
+  target 'XTPlayer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
