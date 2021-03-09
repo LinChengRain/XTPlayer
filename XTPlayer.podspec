@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XTPlayer'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of XTPlayer.'
+  s.version          = '0.0.1'
+  s.summary          = '一款基于AVPlayer封装的音频播放器。'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,10 +28,15 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/LinChengRain/XTPlayer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'XTPlayer/Classes/**/*'
   
+  s.swift_versions = ['5.0','5.1','5.2']
+  s.platform = :ios,'10.0'
+  
+  s.dependency 'Alamofire', '~> 5.0'
+  s.dependency 'WCDB.swift', '1.0.8.2'
   # s.resource_bundles = {
   #   'XTPlayer' => ['XTPlayer/Assets/*.png']
   # }
